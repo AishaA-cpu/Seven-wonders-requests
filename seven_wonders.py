@@ -27,6 +27,7 @@ def get_query_params(query_string, LOCATION_IQ_ACCESS_KEY = ""):
     takes query string to be search assumes query is always a list
     specificies format for requests should send json response 
     requires location IQ access key
+    change query string name, because query string is everything after the question
     """
     LOCATION_IQ_ACCESS_KEY = ""
     
@@ -56,6 +57,7 @@ def retrieve_lon_lat_from_json_(request_json):
     takes response json and returns lon and lat in a dictionary
     returns lat and lon of first object in json response
     outputs dictionary of lat and lon
+    # test to see that json is not empty
 
     """
     wonder_lon_lat = {}
